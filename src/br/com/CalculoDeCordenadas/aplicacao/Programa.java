@@ -26,5 +26,9 @@ import br.com.CalculoDeCordenadas.dominio.Ponto;
 
 
                 System.out.println("A distancia entre os pontos A e B é: "+ pontoA.CalcularDistanciaEntreDoisPontos(pontoA,pontoB));
+
+                     System.out.println("O ponto A está:" + pontoA.IndicarLocalizacaoNoPlanoCartesiano(pontoA));
+
+                        System.out.println("O ponto B está:" + pontoA.IndicarLocalizacaoNoPlanoCartesiano(pontoB));
         }
     }

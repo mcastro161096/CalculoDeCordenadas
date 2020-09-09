@@ -48,4 +48,28 @@ package br.com.CalculoDeCordenadas.dominio;
                 return distancia;
             }
 
+            public String IndicarLocalizacaoNoPlanoCartesiano(Ponto ponto)
+            {
+                if (ponto.x > 0 && ponto.y > 0)
+                    return "No 1° Quadrante";
+
+                if(ponto.x < 0 && ponto.y > 0)
+                    return "No 2° Quadrante";
+
+                if(ponto.x < 0 && ponto.y < 0)
+                    return "No 3° Quadrante";
+
+                if(ponto.x > 0 && ponto.y < 0)
+                    return "No 4° Quadrante";
+
+                if(ponto.x == 0 && ponto.y != 0)
+                    return "Sobre o eixo Y";
+
+                if(ponto.x != 0 && ponto.y == 0)
+                    return "Sobre o eixo X";
+                else
+                    return "Na origem";
+
+            }
+
     }
